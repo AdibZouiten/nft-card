@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size:18px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:99vh;
+    font-family: 'Outfit', sans-serif;
+    background-color:#0c1729;
+    color:#8ea8d2;
+}
+
+main{
+    width:95%;
+    max-width:375px;
+}
+
+img{
+    width:100%;
+    object-fit: cover;
+    border-radius:0.3em;
+}
+.card{
+    background-color:#15273f;
+    padding:1.3em;
+    border-radius:0.6em;
+}
+
+.card-title{
+    background-image:url(./images/image-equilibrium.jpg);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:300px;
+    background-size: cover;
+    background-position: center;
+    border-radius:0.3em;
+    transition:500ms;
+}
+.color-overlay:hover{
+    background-color:hsl(178, 100%, 50%);
+    z-index:99;
+}
+.img-icon{
+    display:none;
+}
+
+.avatar{
+    width:auto;
+}
+
+/*=============== typo styles ===============*/
+
+h1{
+    font-weight:600;
+    font-size:1.3rem;
+    margin:0.7em 0;
+    color:white;
+}
+
+p{
+    font-weight:300;
+    opacity:0.7;
+    margin-bottom:1em;
+    font-size:1rem;
+}
+hr{
+    opacity:0.5;
+    margin-bottom:1em;
+}
+.price{
+    color:hsl(178, 100%, 50%);
+    font-weight:700;
+}
+.time{
+    font-weight:500;
+}
+.Creator-info{
+    font-weight:300;
+}
+.name{
+    font-weight:700;
+    color:white;
+}
+.avatar{
+    border:2px solid white;
+    border-radius:50%;
+}
+.hover{
+    transition:500ms;
+    cursor: pointer;
+}
+.hover:hover{
+    color:hsl(178, 100%, 50%);
+}
+
+/*=============== mobile layout ===============*/
+
+.stats{
+    display:flex;
+    justify-content: space-between;
+}
+.price,.time{
+    display: flex;
+    align-items: center;
+}
+svg{
+    margin-right:0.3em;
+}
+
+.Creator{
+    display: flex;
+    align-items: center;
+}
+.avatar{
+    aspect-ratio:1/1;
+    width:10%;
+    margin-right:1em;
+}
+.Creator-info{
+    margin:0;
+}
+
+
+
+
