@@ -1,15 +1,15 @@
 *{
     margin:0;
     padding:0;
+    transition:500ms;
 }
 html{
     font-size:18px;
 }
 
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     min-height:99vh;
     font-family: 'Outfit', sans-serif;
     background-color:#0c1729;
@@ -33,7 +33,8 @@ img{
 }
 
 .card-title{
-    background-image:url(./images/image-equilibrium.jpg);
+    background-color:hsl(178, 100%, 50%);
+    background-image: url(./images/image-equilibrium.jpg);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -42,13 +43,25 @@ img{
     background-position: center;
     border-radius:0.3em;
     transition:500ms;
+    cursor: pointer;
 }
-.color-overlay:hover{
-    background-color:hsl(178, 100%, 50%);
-    z-index:99;
-}
-.img-icon{
+
+
+
+.hover-icon{
+    background-color:hsla(178, 100%, 50%, 0.34);
+    width:100%;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     display:none;
+}
+.hover-icon svg{
+    margin:0;
+}
+.card-title:hover .hover-icon{
+    display:flex;
 }
 
 .avatar{
